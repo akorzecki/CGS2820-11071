@@ -2,136 +2,259 @@
 <html>
 <head>
    <title>Anthony's Computer Repair Services</title>
+
    <meta charset="utf-8">
    <meta name="author" content="Anthony">
    <meta name="description" content="This is Anthony Korzecki's CGS 2820 webpage. 
    This is a demonstration page detailing a startup computer repair business founded by Mr. Anthony.">
    <meta name="keywords" content="biography, Sarasota, Florida, Entrepreneur, Student, Local, Small Business">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+   <style type="text/css">
+
+      /* Tag & Element Selectors */
+
+      body {
+         background-image: url('images/backgroundImage.jpg');
+         max-width: 1080px;
+         margin: auto;
+         font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+      }
+
+      main {
+         padding: 20px;
+      }
+
+      footer {
+         text-align: center;
+         padding: 20px;
+      }
+
+      header#top {
+         padding-top: 2%;
+         padding-bottom: 2%;
+         background-image: url('images/techBanner.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+         position: relative;
+         -webkit-text-stroke: 2px #11374e;
+      }
+
+      nav {
+         text-align: center;
+         font-size: 30px;
+         margin: 0 0 50px 0;
+      }
+
+      hr {
+         width: 80%;
+         border: 7px solid #11374e;
+      }
+
+      h1 {
+         text-align: center;
+         font-size: 36px;
+         color: #6d98b3;
+      }
+
+      h2 {
+         color: #2d96d8;
+         text-align: center;
+         font-size: 32px;
+      }
+
+      p {
+         font-size: 18px;
+         color: #94b8cf;
+      }
+
+      img {
+         max-width: 250px;
+         height: auto;
+      }
+
+      svg {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      svg rect {
+         fill: #2b93d3;
+         stroke: rgb(255, 255, 255);
+         stroke-width: 3;
+         opacity: 0.5;
+      }
+
+      a {
+         color: #ffffff;
+         text-decoration: none;
+      }
+
+      /* Class Selectors */
+
+      .highlight {
+         color: #58a8da;
+         font-weight: bold;
+      }
+
+      .italicize {
+         font-style: italic;
+      }
+
+      .title {
+         color: #bddaec;
+         font-size: 60px;
+         font-weight: bold;
+      }
+
+      .bgcontrastfill {
+         background-color: #3c88b8;
+      }
+
+      .smallimg {
+         max-width: 100px;
+      }
+
+      /* ID selectors */
+
+      #wrapper {
+         border: 2px solid #11374e;
+         background-color: #010f18;
+      }
+
+      #social {
+         text-align: center;
+         padding: 10px;
+      }
+
+
+   </style>
 </head>
 
-<body style="background-image:url('images/backgroundImage.jpg'); max-width: 1080px; margin: auto;">
+<body>
+   <div id="wrapper">
 
-   <header id="top" style="padding-top:15%; background-image:url('images/techBanner.jpg');
-   background-repeat:no-repeat; background-size:cover; background-position:center center; position:relative;">
-      <p style="font-size: 80px; color: #ffffff; text-align: center;
-      margin: 0; background-color: #010F18;">
-         Anthony's Computer Repair Service
-      </p>
-      <p style="font-size: 50px; color: #84a2b4; text-align: center; margin: 0 0 50px 0;">
-         <i>
+      <header id="top">
+         <h1 class="title">
+            Anthony's Computer Repair Service
+         </h1>
+         <h1 class="italicize">
             Serving you since 2026
-         </i>
-      </p>
-   </header>
+         </h1>
+      </header>
 
-   <nav style="text-align: center; font-size: 30px; margin: 0 0 50px 0;">
-      <a href="#section1">What We Offer</a><br>
-      <a href="#section2">Why Us?</a><br>
-   </nav>
-
-   <main>
-      <hr style="width:80%; border:7px solid #11374e;">
-      <h1 id="section1" style="text-align: center; font-size: 36px; color: #6d98b3;">
-         <i>What We Offer</i>
-      </h1>
-      <p style="font-size: 18px; background-color: #94b8cf;">
-         Anthony's Computer Repair Services, LLC offers a wide variety of IT support services to the community of Sarasota.<br>
-         <br>
-         We specialize in <span style="color: green;">Hardware Repairs</span>,
-         <span style="color: brown;">Screen Replacements</span>, 
-         and <span style="color: darkmagenta;">IoT installations</span>.
-      </p>
-      
-      <p style="text-align: center;">
-         <img src="images/pcRepair.jpg" alt="A Motherboard being repaired" style="max-width: 250px;">
-         <img src="images/screenReplacement.jpg" alt="A broken iPhone" style="max-width: 250px;">
-         <img src="images/internet_of_things_graphic-100663213-orig.jpg" alt="Internet of Things" style="max-width: 250px;">
-      </p>
-
-      <h2 style="color: blue; text-align: center; font-size: 32px;">
-         Pricing
-      </h2>
-      <p style="font-size: 18px; background-color: #94b8cf;">
-         We offer various pricing tiers based on the service you are looking for:<br>
-         <br>
-         <span style="color: green;">Hardware Repairs</span> start at $50 an hour.<br>
-         <span style="color: brown;">Screen Replacements</span> start at $100 per device.<br>
-         <span style="color: darkmagenta;">IoT installations</span> start at $125 an hour, plus trip fees.
-      </p>
-   
-      <p style="font-weight: bold; font-size: 18px; text-align: center; background-color: #94b8cf;">
-         Contact us for a free quote: 
-         <a href="mailto:anthonyscomputerrepair@hotmail.com">anthonyscomputerrepair@hotmail.com</a> 
-         <a href="tel:9413794642">+1 (941) 379-4642</a>
-      </p>
-
-<p style="text-align: center;">
-   <svg width="220" height="60">
-      <rect x="10" y="5" rx="10" ry="10" width="200" height="50" 
-      style="fill:#2b93d3; stroke:rgb(255, 255, 255); stroke-width:3; opacity:0.5;" />
-      <text x="50%" y="50%" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">
-         Quality work, done cheap!
-      </text>
-   </svg>
-</p>
-
-
-      <br>
-
-      <hr style="width:80%; border:7px solid #11374e;">
-      <h1 id="section2" style="text-align: center; font-size: 36px; color: #6d98b3;">
-         <i>Why Us?</i>
-      </h1>
-      <h2 style="color: blue; text-align: center; font-size: 32px;">
-         Our Story
-      </h2>
-      <p style="font-size: 18px; background-color: #94b8cf;">
-         <span style="font-size: 20px; font-weight: bold;">Anthony's Computer Repair Services, LLC</span> 
-         was created as a dedicated local initiative to provide reliable,
-         affordable, and transparent technical support to residents and businesses in the greater Sarasota area.
-         Built on a strong foundation of hands-on technical experience and a passion for modern computing, our 
-         mission is to eliminate the frustration of unexpected hardware failures, broken devices, and complex network setups.
-         Whether troubleshooting desktop components, restoring laptops with fresh screens,
-         or integrating smart IoT hardware into your daily workflow, we approach every job with precision,
-         efficiency, and honest communication. We believe high-quality IT service shouldn't come with confusing
-         jargon or hidden fees, which is why we remain committed to delivering dependable diagnostics, fast
-         turnaround times, and friendly, personalized customer service for every project.
-      </p>
-
-      <h2 style="color: blue; text-align: center; font-size: 32px;">About Anthony</h2>
-      <p style="font-size: 18px; text-align: right;">
-         <img src="images/aPlus.png" alt="CompTIA A+ Badge" style="max-width: 250px;">
-         <img src="images/netPlus.png" alt="CompTIA Network+ Badge" style="max-width: 250px;">
-         <img src="images/AZ900.png" alt="Microsoft Azure AZ-900 Badge" style="max-width: 250px;"><br>
-      </p>
-      <p style="background-color: #94b8cf; text-align: right;">
-         <span style="background-color: #6d98b3;">Anthony is a <a href="https://comptia.org">CompTIA</a> A+, Network+, &
-         <a href="https://www.microsoft.com">Microsoft</a> Azure AZ-900 certified IT specialist.<br>
-         Anthony also writes <a href="pages/ShortStory.html">short stories</a> in his free time.</span>
-      </p>
-      <p style="text-align: right;">
-         <img src="images/larpPhoto.jpg" alt="A photo of Anthony" style="max-width: 40%;">
-      </p>
-   </main>
-   
-
-   <footer>
-      <p style="font-size: 32px; text-align: center; background-color: #94b8cf;">
-         Table of Contents<br>
+      <nav>
          <a href="#section1">What We Offer</a><br>
          <a href="#section2">Why Us?</a><br>
-         <a href="#top">
-            <img src="images/backToTopArrow.png" alt="Back to Top" style="max-width: 5%; max-height: 5%;">
-            <img src="images/backToTopArrow.png" alt="Back to Top" style="max-width: 5%; max-height: 5%;">
-            <img src="images/backToTopArrow.png" alt="Back to Top" style="max-width: 5%; max-height: 5%;">
-         </a>
-      </p>
-      <p style="font-size: 16px; text-align: center; background-color: #94b8cf;">
-            <a href="mailto:anthonyscomputerrepair@hotmail.com">anthonyscomputerrepair@hotmail.com</a> |
-            <a href="tel:9413794642">+1 (941) 379-4642</a>
-      </p>
-   </footer>
+      </nav>
 
+      <main>
+         <hr>
+         <h1 id="section1" class="italicize">
+            What We Offer
+         </h1>
+         <p>
+            Anthony's Computer Repair Services, LLC offers a wide variety of IT support services to the community of Sarasota.<br>
+            <br>
+            We specialize in <span class="highlight">Hardware Repairs</span>,
+            <span class="highlight">Screen Replacements</span>, 
+            and <span class="highlight">IoT installations</span>.
+         </p>
+         
+         <p>
+            <img src="images/pcRepair.jpg" alt="A Motherboard being repaired">
+            <img src="images/screenReplacement.jpg" alt="A broken iPhone">
+            <img src="images/internet_of_things_graphic-100663213-orig.jpg" alt="Internet of Things">
+         </p>
+
+         <h2>
+            Pricing
+         </h2>
+         <p>
+            We offer various pricing tiers based on the service you are looking for:<br>
+            <br>
+            <span class="highlight">Hardware Repairs</span> start at $50 an hour.<br>
+            <span class="highlight">Screen Replacements</span> start at $100 per device.<br>
+            <span class="highlight">IoT installations</span> start at $125 an hour, plus trip fees.
+         </p>
+      
+         <p>
+            Contact us for a free quote: 
+            <a href="mailto:anthonyscomputerrepair@hotmail.com">anthonyscomputerrepair@hotmail.com</a> 
+            <a href="tel:9413794642">+1 (941) 379-4642</a>
+         </p>
+
+         <p>
+            <svg width="220" height="60">
+               <rect x="10" y="5" rx="10" ry="10" width="200" height="50" />
+               <text x="50%" y="50%" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">
+                  Quality work, done cheap!
+               </text>
+            </svg>
+         </p>
+
+         <br>
+
+         <hr>
+         <h1 id="section2" class="italicize">
+            Why Us?
+         </h1>
+         <h2>
+            Our Story
+         </h2>
+         <p>
+            <span class="highlight">Anthony's Computer Repair Services, LLC</span> 
+            was created as a dedicated local initiative to provide reliable,
+            affordable, and transparent technical support to residents and businesses in the greater Sarasota area.
+            Built on a strong foundation of hands-on technical experience and a passion for modern computing, our 
+            mission is to eliminate the frustration of unexpected hardware failures, broken devices, and complex network setups.
+            Whether troubleshooting desktop components, restoring laptops with fresh screens,
+            or integrating smart IoT hardware into your daily workflow, we approach every job with precision,
+            efficiency, and honest communication. We believe high-quality IT service shouldn't come with confusing
+            jargon or hidden fees, which is why we remain committed to delivering dependable diagnostics, fast
+            turnaround times, and friendly, personalized customer service for every project.
+         </p>
+
+         <h2>About Anthony</h2>
+         <p>
+            <img src="images/aPlus.png" alt="CompTIA A+ Badge">
+            <img src="images/netPlus.png" alt="CompTIA Network+ Badge">
+            <img src="images/AZ900.png" alt="Microsoft Azure AZ-900 Badge"><br>
+         </p>
+         <p>
+            <span class="italicize">Anthony is a <a href="https://comptia.org">CompTIA</a> A+, Network+, &
+            <a href="https://www.microsoft.com">Microsoft</a> Azure AZ-900 certified IT specialist.<br>
+            Anthony also writes <a href="pages/ShortStory.html">short stories</a> in his free time.</span>
+         </p>
+         <p>
+            <img src="images/larpPhoto.jpg" alt="A photo of Anthony">
+         </p>
+      </main>
+
+      <footer>
+         <p>
+            <!-- Navigation Menu -->
+            Table of Contents<br>
+            <a href="#section1">What We Offer</a><br>
+            <a href="#section2">Why Us?</a><br>
+            <a href="#top">
+               <img class="smallimg bgcontrastfill" src="images/backToTopArrow.png" alt="Back to Top">
+               <img class="smallimg bgcontrastfill" src="images/backToTopArrow.png" alt="Back to Top">
+               <img class="smallimg bgcontrastfill" src="images/backToTopArrow.png" alt="Back to Top">
+            </a>
+         </p>
+         <div id="social">
+            <p>
+               <a href="mailto:anthonyscomputerrepair@hotmail.com">anthonyscomputerrepair@hotmail.com</a> |
+               <a href="tel:9413794642">+1 (941) 379-4642</a>
+            </p>
+         </div> <!-- close social -->
+      </footer>
+
+   </div> <!-- close wrapper -->
 </body>
 </html>
