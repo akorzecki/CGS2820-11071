@@ -1,9 +1,7 @@
-/* Box sizing reset requested by assignment */
 * {
    box-sizing: border-box;
 }
 
-/* Tag & Element Selectors */
 body {
    background-image: url('images/backgroundImage.jpg');
    max-width: 1080px;
@@ -23,10 +21,35 @@ header {
 }
 
 nav {
+   width: 100%;
    text-align: center;
    color: #94b8cf;
-   font-size: 24px;
+   font-size: 1.1em;
    margin: 0 0 40px 0;
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav li {
+   list-style: none;
+}
+
+nav a {
+   display: block;
+   width: 40%;
+   margin: 0 auto 8px auto;
+   color: #ffffff;
+   text-decoration: none;
+   border: 2px #AAA solid;
+   padding: 6px;
+}
+
+nav a:hover {
+   color: #58a8da;
 }
 
 main {
@@ -60,6 +83,30 @@ p {
    color: #94b8cf;
 }
 
+dt {
+   font-weight: bold;
+   color: #58a8da;
+   margin-top: 10px;
+}
+
+dd {
+   color: #94b8cf;
+   margin-left: 20px;
+}
+
+sub {
+   font-size: 0.8em;
+}
+
+sup {
+   font-size: 0.8em;
+}
+
+small {
+   font-size: 0.8em;
+   color: #94b8cf;
+}
+
 img {
    max-width: 250px;
    height: auto;
@@ -83,7 +130,33 @@ a {
    text-decoration: none;
 }
 
-/* Class Selectors */
+aside {
+   width: 25%;
+   float: left;
+   box-sizing: border-box;
+   padding: 14px;
+   text-align: right;
+}
+
+section {
+   width: 75%;
+   float: left;
+   box-sizing: border-box;
+   padding: 14px;
+}
+
+address {
+   font-style: normal;
+   color: #bddaec;
+   margin-bottom: 15px;
+}
+
+abbr {
+   text-decoration: underline dotted;
+   cursor: help;
+   color: #58a8da;
+}
+
 .highlight {
    color: #58a8da;
    font-weight: bold;
@@ -107,7 +180,38 @@ a {
    max-width: 100px;
 }
 
-/* ID Selectors */
+.selected {
+   color: #C0C0C0;
+   font-weight: bold;
+}
+
+.course-list {
+   list-style: square;
+   color: #94b8cf;
+   padding-left: 40px;
+   line-height: 1.6em;
+}
+
+.recommendation-list {
+   list-style-image: url('images/bullet.png');
+   padding-left: 40px;
+   color: #94b8cf;
+   line-height: 1.6em;
+}
+
+.reference-list {
+   list-style-type: lower-roman;
+   padding-left: 40px;
+   color: #94b8cf;
+   line-height: 1.6em;
+}
+
+.special-char {
+   color: rgb(42, 119, 235);
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
 #wrapper {
    border: 2px solid #11374e;
    background-color: #010f18;
@@ -118,45 +222,17 @@ a {
    padding: 10px;
 }
 
-/* ==========================================================
-   ADDITIONS REQUIRED FOR RUBRIC (Grading Criteria)
-   ========================================================== */
+@media only screen and (min-width: 640px) {
+   nav a {
+      display: inline-block;
+      width: auto;
+      border: 2px #AAA solid;
+      padding: 6px 10px;
+      margin: 0;
+   }
 
-/* Nav Hover and Selected States */
-nav a:hover {
-   color: #58a8da;
-}
-
-.selected {
-   color: #C0C0C0;
-   font-weight: bold;
-}
-
-/* 2-Column Resume Layout (aside & section) */
-aside {
-   width: 25%;
-   float: left;
-   box-sizing: border-box;
-   padding: 14px;
-   text-align: right;
-}
-
-section {
-   width: 75%;
-   float: left;
-   box-sizing: border-box;
-   padding: 14px;
-}
-
-/* Address & Abbr Tags Required for Resume */
-address {
-   font-style: normal;
-   color: #bddaec;
-   margin-bottom: 15px;
-}
-
-abbr {
-   text-decoration: underline dotted;
-   cursor: help;
-   color: #58a8da;
+   nav li {
+      display: inline-block;
+      padding: 0 4px;
+   }
 }
