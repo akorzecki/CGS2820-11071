@@ -1,0 +1,22 @@
+WEBSITE COLOR PALETTE REFERENCE
+
+BACKGROUNDS & STRUCTURAL BORDERS
+#010f18 - Very Dark Navy: Main container background (#wrapper)
+#11374e - Dark Steel Navy: Outer wrapper border, hr divider rule, header text stroke
+
+TEXT & HEADINGS
+#94b8cf - Soft Slate Blue: Paragraphs (p), descriptions (dd), small text, list items, nav text
+#6d98b3 - Medium Slate Blue: Primary headings (h1)
+#2d96d8 - Vibrant Medium Blue: Subheadings (h2)
+#bddaec - Light Pale Blue: Header banner title (.title), address block text
+
+ACCENTS & HIGHLIGHTS
+#58a8da - Bright Sky Blue: Nav link hover, definition terms (dt), abbr tags, inline highlights (.highlight)
+#3c88b8 - Steel Cerulean Blue: Contrast background fill (.bgcontrastfill)
+#2b93d3 - Vivid Cyan-Blue: SVG banner rectangle fill (svg rect)
+rgb(42, 119, 235) - Royal Blue: Special character accents (.special-char)
+
+NEUTRALS & UI STATES
+#ffffff - Pure White: Links (a), nav link text (nav a), SVG button text and stroke
+#aaaaaa - Mid Gray: Nav link borders (nav a)
+#c0c0c0 - Silver Gray: Active/selected nav tab text (.selected)
