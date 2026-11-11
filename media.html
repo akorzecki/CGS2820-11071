@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Media Demonstration - Anthony's Computer Repair Services</title>
+
+   <meta charset="utf-8">
+   <meta name="author" content="Anthony">
+   <meta name="description" content="Multimedia showcase for Anthony's Computer Repair Services featuring embedded audio, custom video, animated graphics, JavaScript slideshow, image map hotspot, YouTube video, and CSS z-index stacking.">
+   <meta name="keywords" content="Media, Audio, Video, Animation, Slideshow, YouTube, Computer Repair, Sarasota">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="anthonyscomputerrepair.css" rel="stylesheet" type="text/css">
+
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+   <div id="wrapper">
+
+      <header id="top">
+         <h1 class="title">
+            Anthony's Computer Repair Services
+         </h1>
+         <h1 class="italicize">
+            Serving you since 2026
+         </h1>
+      </header>
+
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pages/ShortStory.html">Short Story</a></li>
+            <li><a href="transcript.html">Transcript</a></li>
+         </ul>
+      </nav>
+
+      <main>
+         <hr>
+         <h1 id="media-heading" class="italicize">
+            Multimedia Demonstrations
+         </h1>
+         <p class="byline">
+            Interactive audio, video, graphics, and web components for Anthony's Computer Repair Services
+         </p>
+         <br>
+
+         <ol class="media-list">
+            <li class="media-item">
+               <h2>1. Audio - Welcome Message</h2>
+               <p>
+                  Listen to an introductory welcome message from Anthony.
+               </p>
+               <audio controls class="media-player">
+                  <source src="media/welcomeAudio.mp3" type="audio/mpeg">
+                  <source src="media/welcomeAudio.ogg" type="audio/ogg">
+                  Your browser does not support the audio element.
+               </audio>
+            </li>
+
+            <li class="media-item">
+               <h2>2. Video - Navigation Demonstration</h2>
+               <p>
+                  Watch a quick video of a person demonstrating how to navigate a digital workspace.
+               </p>
+               <video controls width="560" height="315" class="media-player">
+                  <source src="media/benchTest.mp4" type="video/mp4">
+                  <source src="media/benchTest.ogv" type="video/ogg">
+                  Your browser does not support the video tag.
+               </video>
+            </li>
+
+            <li class="media-item">
+               <h2>3. Animation - Workstation</h2>
+               <p>
+                  A multi-frame cycling animation showing a powerful PC workstation, typical of high-performance office setups.
+               </p>
+               <img src="media/thermalCheck.gif" alt="Animated GIF showing motherboard inspection and thermal points" class="media-display">
+            </li>
+
+            <li class="media-item">
+               <h2>4. Slideshow - Relevant Images</h2>
+               <p>
+                  Click through some images relevant to our IT repair business operations.
+               </p>
+               <div class="slideshow-box">
+                  <img id="slide-viewer" src="images/pcRepair.jpg" alt="Slideshow repair image" class="media-display">
+                  <p id="slide-caption" class="italicize">Hardware Diagnostic &amp; Motherboard Repair</p>
+                  <div class="slideshow-controls">
+                     <button type="button" class="slide-btn" onclick="prevSlide()">&laquo; Previous</button>
+                     <button type="button" class="slide-btn" onclick="nextSlide()">Next &raquo;</button>
+                  </div>
+               </div>
+            </li>
+
+            <li class="media-item">
+               <h2>5. Hotspot - Interactive Motherboard Guide</h2>
+               <p>
+                  Hover and click on specific portions of the board below: the left half navigates to our <a href="index.html#section1">Hardware Services</a>, and the right half opens our <a href="contact.html">Quote Contact Form</a>.
+               </p>
+               <img src="images/pcRepair.jpg" alt="Motherboard repair workspace with interactive hotspots" usemap="#motherboard-map" class="media-display">
+               <map name="motherboard-map">
+                  <area shape="rect" coords="0,0,250,220" href="index.html#section1" alt="Hardware Repair Services" title="Explore Hardware Repairs">
+                  <area shape="rect" coords="251,0,500,220" href="contact.html" alt="Request a Quote" title="Get in Touch for a Quote">
+               </map>
+            </li>
+
+            <li class="media-item">
+               <h2>6. YouTube - Professional Cable Management Guide</h2>
+               <p>
+                  An embedded tutorial demonstrating clean routing techniques for professional workspaces.
+               </p>
+               <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/DHPuvLcSYu8" title="Cable Management Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+            </li>
+
+            <li class="media-item">
+               <h2>7. z-index - Layered Certification Badges</h2>
+               <p>
+                  Demonstration of CSS positioning and the <code>z-index</code> property layering our technical certifications in an overlapping stack.
+               </p>
+               <div class="zstack-frame">
+                  <img src="images/aPlus.png" alt="CompTIA A+ Badge" class="zstack-card stack-back">
+                  <img src="images/netPlus.png" alt="CompTIA Network+ Badge" class="zstack-card stack-middle">
+                  <img src="images/AZ900.png" alt="Microsoft Azure Badge" class="zstack-card stack-front">
+               </div>
+            </li>
+         </ol>
+      </main>
+
+      <footer>
+         <div id="social">
+            <p>
+               <a href="mailto:anthonyscomputerrepair@hotmail.com">anthonyscomputerrepair@hotmail.com</a> |
+               <a href="tel:9413794642">+1 (941) 379-4642</a>
+            </p>
+         </div> <!-- close social -->
+      </footer>
+
+   </div> <!-- close wrapper -->
+
+   <script>
+      var slideImages = [
+         "images/pcRepair.jpg",
+         "images/screenReplacement.jpg",
+         "images/internet_of_things_graphic-100663213-orig.jpg"
+      ];
+      var slideCaptions = [
+         "Hardware Diagnostic & Motherboard Repair",
+         "Cracked Display & Digitizer Replacement",
+         "IoT Smart Hub & Network Device Configuration"
+      ];
+      var currentSlide = 0;
+
+      function updateSlide() {
+         var imgElement = document.getElementById("slide-viewer");
+         var captionElement = document.getElementById("slide-caption");
+         imgElement.src = slideImages[currentSlide];
+         captionElement.textContent = slideCaptions[currentSlide];
+      }
+
+      function nextSlide() {
+         currentSlide = (currentSlide + 1) % slideImages.length;
+         updateSlide();
+      }
+
+      function prevSlide() {
+         currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+         updateSlide();
+      }
+   </script>
+</body>
+</html>
